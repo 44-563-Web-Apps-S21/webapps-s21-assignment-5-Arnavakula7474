@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Plant website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style> .img-responsive, .img-thumbails  {
+    width: 30%;
+    height: auto;
+}
+.img-thumbails{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100px;
+}
+.Thumbails:hover {
+    box-shadow: 0 0 1px 1px red;
+}
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color:lightcyan;
+}
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="plants.html">Happy Plants</a>
+    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse show" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="cat.html">Cat</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="dog.html">Dog</a>
+            </li>
+    </div>
+</nav>
+<h1>Plants by Arnav</h1>
+<div class = "container">
+    <div class = "row">
+    <div class="col-sm-2">A</div>
+    <div class="col-sm-2">r</div>
+    <div class="col-sm-2">N</div>
+    <div class="col-sm-2">A</div>
+    <div class="col-sm-2">V</div>
+    <div class="col-sm-2">A</div>
+    </div>
+    <div class = "row">
+    <div class="col-md">Amaranth</div>
+    <div class="col-md">Rose</div>
+    <div class="col-md">Neem</div>
+    <div class="col-md">apple</div>
+    <div class="col-md">velvet bean</div>
+    <div class="col-md">Azolla</div>
+    </div>
+    <p>The row with the Plant names break first because the share of width of md is 768px and if we reduce the size below that the row starts stacking up elements vertically.</p>
+    </div>
+    <div class="Images">
+      <img src="Amaranath.jpg" alt="Amaranath" class="img-responsive" width=450 height=450>
+      <img src="neem.jpg" alt="neem" class="img-responsive" width=450 height=450>
+      <img src="velvet.jpg" alt="velvet" class="img-responsive" width=450 height=450>
+  </div>
+  <div class="Images">
+      <img src="Amaranath.jpg" alt="Amaranath" class="img-thumbails" width="150" height="150">
+      <img src="neem.jpg" alt="neem" class="img-humbails" width="150" height="150">
+      <img src="velvet.jpg" alt="velvet" class="img-thumbails" width="150" height="150">
+  </div>
+  <table class="table table-bordered table-striped table-hover table-condensed">
+    <caption style="caption-side: top;"> Defines</caption>
+        <thead>
+            <tr>
+                <th scope="col">Letter</th>
+                <th scope="col">Plant</th>
+                <th scope="col">City</th>
+                <th scope="col">Food</th>    
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">A</th>
+                <td>Amaranath</td>
+                <td>Austin</td>
+                <td>Aspic</td>
+            </tr>
+            <tr>
+                <th scope="row">R</td>
+                <td>Rose</td>
+                <td>Rabat</td>
+                <td>Ranch</td>  
+            </tr>
+            <tr>
+                <th scope="row">N</th>
+                <td>Neem</td>
+                <td>Nebraska</td>
+                <td>nuggets</td>  
+            </tr>
+            <tr>
+                <th scope="row">A</th>
+                <td>Apple</td>
+                <td>Akron</td>
+                <td>Apple pie</td>  
+            </tr>
+            <tr>
+                <th scope="row">V</th>
+                <td>Velvet beans</td>
+                <td>Verginia</td>
+                <td>Vanilla</td>  
+            </tr>
+            <tr>
+                <th scope="row">A</th>
+                <td>Azolla</td>
+                <td>Almond</td>
+                <td>Allentown</td>
+            </tr>
+        </tbody>
+    </table>
+    <nav class="navbar navbar-light bg-light">
+      <div class="btn-toolbar" role="toolbar">
+          <div class="btn-group">
+              <button type="button" class="btn btn-success">A</button>
+              <button type="button" class="btn btn-success">R</button>
+              <button type="button" class="btn btn-success">N</button>
+          </div>
+          <div class="btn-group">
+              <button type="button" class="btn alert-warning">A</button>
+              <button type="button" class="btn alert-warning">V</button>
+          </div>
+          <div class="btn-group">
+              <button type="button" class="btn btn-danger">A</button>
+          </div>
+      </div>
+  </nav>
+  <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Names
+      </button>
+      <div class="dropdown-menu">
+          <a class="dropdown-item" href="cat.html">Cat</a>
+          <a class="dropdown-item" href="dog.html">Dog</a>
+      </div>    
+  </div>
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="Plant">Enter your plant</label>
+      <input type="text" class="form-control" id="plant" placeholder="Enter your plant">
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Sign up for newsletter?</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form> 
+</body>
+</html>
